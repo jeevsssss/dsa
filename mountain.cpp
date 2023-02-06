@@ -12,11 +12,13 @@ int main()
         {
             int count=1;
             int j=i;
+            //left side of the peak 
             while(j>=1 and arr[j]>arr[j-1])
             {
                 count++;
                 j--;
             }
+            //right side of the peak
             while(i<=n-2 and arr[i]>arr[i+1])
             {
                 i++;
